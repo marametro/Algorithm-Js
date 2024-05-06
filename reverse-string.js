@@ -14,11 +14,14 @@
 let  word = 'mara';
 
 function reverse1(str) {
-  return str
-    .split('')
-    .reverse()
-    .join('');
+    return str
+      .split('')  // Convert string to array of characters
+      .reverse()  // Reverse the array elements
+      .join('');  // Join the array back into a string
 }
+
+
+
 
 /*
     In JavaScript, the split() method is used to divide
@@ -54,15 +57,13 @@ console.log(reverse2(word));
 
 
 function reverse3(str) {
-  let reversed = '';
-
-  for (let character of str) {
-    console.log(character)
-    reversed = character + reversed;
-  }
-
-  return reversed;
+    let reversed = '';
+    for (let character of str) {
+      reversed = character + reversed;
+    }
+    return reversed;
 }
+  
 
 //Call function reverse3
 console.log(reverse3(word));

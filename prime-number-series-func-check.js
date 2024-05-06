@@ -20,6 +20,7 @@ let Isprime = function (i) {
   for (let j = 2; j < i; j++) {
     if (i % j == 0) {
       isPrime = false;
+      break;  // Exit the loop if any divisor is found
     }
   }
   return isPrime;
